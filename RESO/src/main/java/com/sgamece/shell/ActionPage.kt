@@ -42,7 +42,7 @@ class ActionPage : AppCompatActivity() {
     private var autoRunItemId = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // 如果应用还没启动，就直接打开了actionPage(通常是PIO的快捷方式)，先跳转到启动页面
+        // 如果应用还没启动，就直接打开了actionPage(通常是RESO的快捷方式)，先跳转到启动页面
         if (!ScriptEnvironmen.isInited()) {
             val initIntent = Intent(this.applicationContext, SplashActivity::class.java)
             initIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)

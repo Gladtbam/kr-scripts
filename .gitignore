@@ -6,7 +6,7 @@ local.properties
 .idea/libraries
 .DS_Store
 build
-pio/build
+RESO/build
 krscript/build
 common/build
 captures

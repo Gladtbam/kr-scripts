@@ -2,5 +2,5 @@ package com.sgamece.shell
 
 import android.app.Application
 
-class PIO : Application() {
+class RESO : Application() {
 }
