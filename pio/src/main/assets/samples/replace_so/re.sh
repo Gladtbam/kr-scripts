@@ -1,6 +1,5 @@
 #!/system/bin/sh
 re_so() {
-    clear
     echo "正在恢复备份..."
     mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so.bak /data/app/*/com.tencent.tmgp.sgamece*/lib/arm64/libtersafe.so 2> /dev/null 
     if [ $? != 0 ]; then

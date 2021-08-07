@@ -1,6 +1,5 @@
 #!/system/bin/sh
 replace_only() {
-    echo
     echo "正在解压 libtersafe.so..."
     unzip /data/app/*/com.tencent.tmgp.sgamece*/base.apk "lib/armeabi-v7a/libtersafe.so" -d /data/local/tmp/ 2> /dev/null 
     if [ $? != 0 ]; then

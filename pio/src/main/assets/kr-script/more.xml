@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <page>
     <group title="替换">
-        <resource dir="file:///android_asset/samples/replace_so" />
-
-        <page config-sh="samples/replace_so/replace.sh" title="替换并备份" />
-        <page config-sh="samples/replace_so/replace_only.sh" title="仅替换" />
+        <action>
+            <title>替换并备份</title>
+            <script>
+                file:///android_asset/samples/replace_so/replace.sh
+            </script>
+        </action>
+        <action>
+            <title>仅替换</title>
+            <script>
+                file:///android_asset/samples/replace_so/replace_only.sh
+            </script>
+        </action>
     </group>
 
     <group title="修改 tss_tmp 文件夹权限">
-        <resource dir="file:///android_asset/samples/auth" />
-
-        <page
-            config-sh="samples/auth/low.sh"
-            desc="替换完成之后, 如果游戏闪退, 可尝试使用该功能"
-            title="修改 tss_tmp 文件夹权限为 000" />
+        <action>
+            <title>修改 tss_tmp 文件夹权限为 000</title>
+            <desc>替换完成之后, 如果游戏闪退, 可尝试使用该功能</desc>
+            <script>file:///android_asset/samples/auth/low.sh</script>
+        </action>
     </group>
 
     <group  title="恢复">
-        <resource dir="file:///android_asset/samples/replace_so" />
-        <resource dir="file:///android_asset/samples/auth" />
-
-        <page config-sh="samples/replace_so/re.sh" title="恢复备份" />
-        <page config-sh="samples/auth/re.sh" title="恢复 tss_tmp 文件夹权限为 700" />
+        <action>
+            <title>恢复备份</title>
+            <script>
+                file:///android_asset/samples/replace_so/re.sh
+            </script>
+        </action>
+        <action>
+            <title>恢复 tss_tmp 文件夹权限为 700</title>
+            <script>
+                file:///android_asset/samples/auth/re.sh
+            </script>
+        </action>
     </group>
 </page>
