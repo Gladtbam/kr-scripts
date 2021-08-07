@@ -9,6 +9,7 @@ android {
     defaultConfig {
         resConfigs "zh"
         minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 28
         versionCode 20210807
         versionName "1.0"
