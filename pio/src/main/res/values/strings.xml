@@ -5,7 +5,7 @@
     <!--是否强制获取ROOT-->
     <bool name="force_root">false</bool>
 
-    <string name="app_name">PIO</string>
+    <string name="app_name">RESO</string>
     <string name="btn_exit">退出</string>
     <string name="float_monitor_tips">双击悬浮窗即可关闭，或按住拖动调整位置</string>
     <string name="permission_float">请授权显示悬浮窗权限！</string>
@@ -13,10 +13,10 @@
     <string name="title_activity_action_page">功能分页</string>
 
     <string name="author_name">xxx</string>
-    <string name="about_title">关于 · PIO</string>
-    <string name="appliction_desc">这是框架演示应用</string>
-    <string name="appliction_name">PIO 示例架</string>
-    <string name="appliction_author">作者：嘟嘟ski</string>
+    <string name="about_title">关于 · RESO</string>
+    <string name="appliction_desc">王者荣耀体验服防ROOT</string>
+    <string name="appliction_name">RESO</string>
+    <string name="appliction_author">作者：Gladtbam</string>
     <string name="engine_version_name">基于[Kr-Script4.0.3]创作</string>
 
     <string name="tab_home">首页</string>
@@ -31,7 +31,7 @@
     <string name="copy_success">复制成功</string>
     <string name="btn_retry">重试</string>
 
-    <string name="pio_starting">PIO·STARTING</string>
+    <string name="pio_starting">RESO·STARTING</string>
     <string name="pop_before_start">正准备启动应用…</string>
     <string name="pop_started">启动完成！</string>
     <string name="pio_permission_checking">检查并获取必需权限……</string>
