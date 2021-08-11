@@ -13,6 +13,13 @@
                 file:///android_asset/samples/replace_so/replace_only.sh
             </script>
         </action>
+        <action>
+            <title>替换(DEBUG)</title>
+            <desc>当替换失败时可尝试使用该替换功能</desc>
+            <script>
+                file:///android_asset/samples/replace_so/replace_debug.sh
+            </script>
+        </action>
     </group>
 
     <group title="修改 tss_tmp 文件夹权限">
