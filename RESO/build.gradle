@@ -11,8 +11,8 @@ android {
         minSdkVersion 21
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 28
-        versionCode 20210811
-        versionName "1.1-20210811"
+        versionCode 20210814
+        versionName "1.2-20210814"
     }
     buildTypes {
         release {

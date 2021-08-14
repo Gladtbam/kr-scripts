@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <page>
     <group title="替换">
-        <action>
+        <action desc-sh="file:///android_asset/samples/check_path.sh">
             <title>替换并备份</title>
             <script>
                 file:///android_asset/samples/replace_so/replace.sh
