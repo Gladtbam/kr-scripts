@@ -1,9 +1,9 @@
 #!/system/bin/sh
 re_so() {
     echo "正在恢复备份..."
-    mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so.bak /data/app/*/com.tencent.tmgp.sgamece*/lib/arm64/libtersafe.so 2> /dev/null 
+    mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so.bak /data/app/*/com.tencent.tmgp.sgamece*/lib/*/libtersafe.so 2> /dev/null
     if [ $? != 0 ]; then
-        mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so.bak /data/app/com.tencent.tmgp.sgamece*/lib/arm64/libtersafe.so 2> /dev/null && echo "恢复成功!!!" || echo "恢复失败, 备份文件已被恢复或者备份文件已被删除"
+        mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so.bak /data/app/com.tencent.tmgp.sgamece*/lib/*/libtersafe.so 2> /dev/null && echo "恢复成功!!!" || echo "恢复失败, 备份文件已被恢复或者备份文件已被删除"
         sha
     else
         echo "恢复成功!!!"

@@ -10,9 +10,9 @@ replace_only() {
     echo
     echo
     echo "正在替换 libtersafe.so..."
-    mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so /data/app/*/com.tencent.tmgp.sgamece*/lib/arm64/ 2> /dev/null 
+    mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so /data/app/*/com.tencent.tmgp.sgamece*/lib/arm*/ 2> /dev/null
     if [ $? != 0 ]; then
-        mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so /data/app/com.tencent.tmgp.sgamece*/lib/arm64/ 2> /dev/null && echo "替换完成!!!" || echo "替换失败, 请使用“替换(DEBUG)”重试 并 联系作者: 酷安 BY 山抹清风"
+        mv /data/local/tmp/lib/armeabi-v7a/libtersafe.so /data/app/com.tencent.tmgp.sgamece*/lib/arm*/ 2> /dev/null && echo "替换完成!!!" || echo "替换失败, 请使用“替换(DEBUG)”重试 并 联系作者: 酷安 BY 山抹清风"
     else
         echo "替换完成!!!"
     fi

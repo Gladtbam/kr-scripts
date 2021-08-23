@@ -22,10 +22,17 @@
         </action>
     </group>
 
-    <group title="修改 tss_tmp 文件夹权限">
+    <group title="防闪退(不保证修复)">
         <action>
-            <title>修改 tss_tmp 文件夹权限为 000</title>
-            <desc>替换完成之后, 如果游戏闪退, 可尝试使用该功能</desc>
+            <title>方法 1</title>
+            <!--修改 libtersafe.so 权限为755, 用户组为system-->
+            <desc>替换完成之后, 如果游戏闪退, 请首先尝试改方法修复</desc>
+            <script>file:///android_asset/samples/auth/high.sh</script>
+        </action>
+        <action>
+            <title>方法 2</title>
+            <!--修改 tss_tmp 文件夹权限为 000-->
+            <desc>如果使用方法 1后游戏依然闪退, 可继续尝试使用该方法修复</desc>
             <script>file:///android_asset/samples/auth/low.sh</script>
         </action>
     </group>
