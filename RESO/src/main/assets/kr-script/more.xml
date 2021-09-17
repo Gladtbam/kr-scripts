@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <page>
     <group title="替换">
+        <resource dir="file:///android_asset/samples" />
         <action desc-sh="file:///android_asset/samples/check_path.sh">
             <title>替换并备份</title>
+            <desc>没什么问题点这个就对了!!!</desc>
             <script>
                 file:///android_asset/samples/replace_so/replace.sh
             </script>
         </action>
         <action>
             <title>仅替换</title>
+            <desc>不想要备份点这个就行</desc>
             <script>
                 file:///android_asset/samples/replace_so/replace_only.sh
             </script>
         </action>
         <action>
             <title>替换(DEBUG)</title>
-            <desc>当替换失败时可尝试使用该替换功能</desc>
+            <desc>当替换失败时使用该功能, 截完整图片或者复制输出发给作者</desc>
             <script>
                 file:///android_asset/samples/replace_so/replace_debug.sh
             </script>
@@ -46,8 +49,19 @@
         </action>
         <action>
             <title>恢复 tss_tmp 文件夹权限为 700</title>
+            <desc>恢复防闪退 - 方法 2 修改的权限 (没啥用的东西)</desc>
             <script>
                 file:///android_asset/samples/auth/re.sh
+            </script>
+        </action>
+    </group>
+
+    <group title="其它">
+        <action>
+            <title>安装 unzip</title>
+            <desc>不建议使用此选项, 推荐Magisk安装Busybox for Android NDK模块</desc>
+            <script>
+                file:///android_asset/samples/install_unzip.sh
             </script>
         </action>
     </group>

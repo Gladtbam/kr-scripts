@@ -9,6 +9,18 @@ FontColor_Purple="\033[35m"
 FontColor_Purple_Bold="\033[1;35m"
 FontColor_Suffix="\033[0m"
 
+check_unzip() {
+    unzip /data/user/0/com.sgamece.shell/files/samples/unzip_test.zip /data/local/tmp/ > /dev/null 2>&1
+    if [ $? != 0 ]; then
+        echo "未检测到 unzip 命令, 请到 Magisk 安装 Busybox for Android NDA 模块 (建议)"
+        echo
+        echo "如果不想安装 Magisk 模块, 请使用本软件提供的 ‘安装unzip’ 功能 (不建议)"
+        exit
+    else
+        echo "检测到 unzip 命令..."
+    fi
+}
+
 replace() {
     echo "正在解压 libtersafe.so..."
     unzip /data/app/*/com.tencent.tmgp.sgamece*/base.apk "lib/armeabi-v7a/libtersafe.so" -d /data/local/tmp/ 2> /dev/null 
@@ -52,4 +64,5 @@ sha() {
     md5sum /data/app/com.tencent.tmgp.sgamece*/lib/*/libtersafe.so 2> /dev/null
 }
 
+check_unzip
 replace
